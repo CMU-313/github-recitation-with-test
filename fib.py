@@ -6,8 +6,8 @@ The zeroth number in the fibonacci sequence is 0. The first number is 1
 Negative numbers should return None
 """
 def fibonacci(position):
-  if(position == 1 or position == 2):
-    return 1
+  if(position <= 1):
+    return position
   return fibonacci(position - 1) + fibonacci(position - 2)
 
 
